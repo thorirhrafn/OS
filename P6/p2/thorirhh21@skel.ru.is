@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+import os
+import subprocess
+
+# Put your script here (instead of the print statements)
+# Your script shall read the valgrind output on stdin,
+# and produce a list of newline-separated lines of virtual page numbers
+#output = os.system("valgrind --tool=lackey --trace-mem=yes ls -la")
+
+list = subprocess.run(["valgrind", "--tool=lackey", "--trace-mem=yes", "ls", "-la"], stdout=subprocess.DEVNULL)
+print("test")
+print("------------------")
+
+for item in list in range(0,9):
+    print(item)
+
+print(42)
+print(4711)
+print(12345)

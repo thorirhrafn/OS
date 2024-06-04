@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+import os
+
+# Put your script here (instead of the print statements)
+# Your script shall read the valgrind output on stdin,
+# and produce a list of newline-separated lines of virtual page numbers
+output = os.system(valgrind --tool=lackey --trace-mem=yes ls -la)
+print("test")
+print("------------------")
+print(output)
+
+print(42)
+print(4711)
+print(12345)
